@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_answer_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cevap Anahtarı Gir"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btn_optical_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Optik Form Gir"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_answer_key"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btn_compare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karşılaştır"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_optical_form"
+        android:layout_marginTop="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/btn_compare"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true">
+
+        <ImageView
+            android:id="@+id/imageView_processed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="#E0E0E0" />
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
